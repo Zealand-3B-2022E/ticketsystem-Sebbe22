@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketSystemClassLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:TicketSystemClassLibrary.Car">
+            <summary>
+            Bil version af basis classsen Vehicle
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Car.Price">
+            <summary>
+            metode som retunerer checker om kørertøjet har en brobiss og giver rabat hvis den har
+            eller retunerer default prisen hvis den ikke har.
+            </summary>
+            <returns> retunerer prisen som en double. </returns>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Car.VehicleType">
+            <summary>
+            printer hvilken type kørertøj det er
+            </summary>
+            <returns>retunerer en string som fortæller hvilken type kørertøj det er</returns>
+        </member>
+        <member name="T:TicketSystemClassLibrary.MC">
+            <summary>
+            motorcykel version af basis classen vehicle
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.MC.Price">
+            <summary>
+            metode som retunerer checker om kørertøjet har en brobiss og giver rabat hvis den har
+            eller retunerer default prisen hvis den ikke har.
+            </summary>
+            <returns> retunerer prisen som en double. </returns>
+        </member>
+        <member name="M:TicketSystemClassLibrary.MC.VehicleType">
+            <summary>
+            printer hvilken type kørertøj det er
+            </summary>
+            <returns>retunerer en string som fortæller hvilken type kørertøj det er</returns>
+        </member>
+        <member name="T:TicketSystemClassLibrary.Vehicle">
+            <summary>
+            basis classen for et kørertøj
+            </summary>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Vehicle.Price">
+            <summary>
+            metode som retunerer checker om kørertøjet har en brobiss og giver rabat hvis den har
+            eller retunerer default prisen hvis den ikke har.
+            </summary>
+            <returns> retunerer prisen som en double. </returns>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Vehicle.VehicleType">
+            <summary>
+            printer hvilken type kørertøj det er
+            </summary>
+            <returns>retunerer en string som fortæller hvilken type kørertøj det er</returns>
+        </member>
+        <member name="M:TicketSystemClassLibrary.Vehicle.CheckLicensePlate(System.String)">
+            <summary>
+            tjekker om nummerpladen der er givet holder sig under 7 tegn og hvis ikke
+            den gør så kastes der en exception
+            </summary>
+            <param name="plate"> den nummerplade som skal være under 7 tegn </param>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+    </members>
+</doc>
